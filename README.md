@@ -14,7 +14,17 @@ pip install bitsrunlogin
 
 ## 单次登录
 
-打开demo.py;  
+进入python下的命令模式，
+```python3
+from bitsrunlogin.LoginManager import LoginManager
+lm = LoginManager()
+lm.login(
+    username = "Your srun account",
+    password = "Your password"
+)
+```
+
+或者可以通过demo.py直接运行;  
 username和password对应校园网账户的用户名与密码，填写后运行即可实现外网连接。
 ```bash
 python3 demo.py
